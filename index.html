@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        ul.nav {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: white;
+              font-family: sans-serif;
+              font-size: small;
+        }
+
+        ul.footer {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                 overflow: hidden;
+                 background-color: rgb(240, 240, 240);
+                 font-family: sans-serif;
+                 font-size: small;
+                 position: fixed;
+                 bottom: 0;
+                 left: 0;
+                 width: 100%;
+        }
+        
+        .navBaritems {
+            float: left;
+        }
+        .footeritems {
+            float: left;
+            color: grey;
+        }
+        li a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+        }
+
+        .navBaritems:hover {
+            text-decoration: underline;
+        }
+
+        .footeritems:hover {
+            text-decoration: underline;
+        }
+        .signinButton {
+            background-color: #4285F4;
+            color: white;
+        }
+        
+        li .signinButton:active {
+            background-color: #3a62a1;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: auto;         
+        }
+        
+        #searchbar {
+            width: 45vh;
+            margin: 15px;
+        }
+        #searchbar:hover {
+            box-shadow: 0 0 11px rgba(33,33,33,.2); 
+        }
+
+        </style>
+    </head>
+
+
+    <body>
+        <ul class="nav">
+            <li><a class="navBaritems" href="">About</a></li>
+            <li><a class="navBaritems" href="">Store</a></li>
+            <li style="float: right"><a class="signinButton" href="">Sign In</a></li>
+            <li style="float: right"><a class="navBaritems" href="">Images</a></li>
+            <li style="float: right"><a class="navBaritems" href="">Gmail</a></li>
+        </ul>
+    <div class="container1">
+        <div>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <div>
+            <form>
+                <input id="searchbar" type="text">
+            </form>
+        </div>
+        <div>    
+            <button type="button">
+                Google Search
+            </button>
+            <button type="button">
+                I'm Feeling Lucky
+            </button>
+        </div>
+    </div>
+    </body>
+
+    <footer>
+        <ul class="footer">
+            <li><a class="footeritems" href="">Adverting</a></li>
+            <li><a class="footeritems" href="">Business</a></li>
+            <li><a class="footeritems" href="">How Search works</a></li>
+            <li><a style="float: right" class="footeritems" href="">Settings</a></li>
+            <li><a style="float: right" class="footeritems" href="">Terms</a></li>
+            <li><a style="float: right" class="footeritems" href="">Privacy</a></li>
+        </ul>
+    </footer>
+
+
+
+</html>
